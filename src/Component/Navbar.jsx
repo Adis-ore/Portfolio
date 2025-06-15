@@ -1,48 +1,93 @@
-import { BiMenu } from "react-icons/bi"; 
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { AiFillLinkedin } from "react-icons/ai"; 
+import { AiFillTwitterCircle } from "react-icons/ai"; 
+import { AiFillGithub } from "react-icons/ai"; 
+import { BiMenu } from "react-icons/bi";
+import React, { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 
 const Navbar = () => {
-
-    const [open, setOpen] = useState(false);
-
+  const [open, setOpen] = useState(false);
 
   return (
-    <div className='bg-[#1C1C1C]  text-white p-3 flex justify-center'>
-        <ul className='hidden sm:flex gap-5 text-sm '>
-            <NavLink className="flex flex-col items-center gap-" >
-                <a href="#home">Home</a>
-                <hr className="hidden w-2/3 bg-gray-400 border-none h-[1.5px]" />
-            </NavLink>
-            <NavLink className="flex flex-col items-center gap-" >
-                <a href="">ABOUT</a>
-                <hr className="hidden w-2/3 bg-gray-400 border-none h-[1.5px]" />
-            </NavLink>
-            <NavLink className="flex flex-col items-center gap-" >
-                <a href="">PROJECTS</a>
-                <hr className="hidden w-2/3 bg-gray-400 border-none h-[1.5px]" />
-            </NavLink>
-            <NavLink className="flex flex-col items-center gap-" >
-                <a href="">CONTACTS</a>
-                <hr className="hidden w-2/3 bg-gray-400 border-none h-[1.5px]" />
-            </NavLink>
-        </ul>
-        <div className="sm:hidden flex items-center justify-end w-full">
-            <BiMenu onClick={()=> setOpen(true)} className="text-[30px] cursor-pointer" />
+    <div className="bg-[#0A0A0A]  text-white p-3 flex justify-around w-[100%] fixed top-0  ">
+        <div className="text-white">
+            <p>ADIS</p>
         </div>
-        <div   className={`fixed top-0 right-0 bottom-0 overflow-hidden bg-white transition-all z-50 ${
-    open ? 'w-64 sm:w-72' : 'w-0'
-  }`}
-  style={{ transitionProperty: 'width', transitionDuration: '300ms' }}>
-            <div>
-                <div onClick={()=> setOpen(false)}>
-                    <IoIosArrowForward className="text-black"/>
-                </div>
-            </div>
+      <ul className="hidden sm:flex gap-5 text-sm ">
+        <NavLink className="flex flex-col items-center gap-">
+          <a href="#home">Home</a>
+        </NavLink>
+        <NavLink className="flex flex-col items-center gap-">
+          <a href="">ABOUT</a>
+        </NavLink>
+        <NavLink className="flex flex-col items-center gap-">
+          <a href="">PROJECTS</a>
+        </NavLink>
+        <NavLink className="flex flex-col items-center gap-">
+          <a href="">CONTACTS</a>
+        </NavLink>
+      </ul>
+        <div className="text-white hidden sm:flex gap-2 justify-around ">
+            <Link to={"https://github.com/Adis-ore"}>
+                <AiFillGithub className="text-[25px]" />
+            </Link>
+            <Link to={""}>
+                <AiFillTwitterCircle className="text-[25px]" />
+            </Link>
+            <Link to={""}>
+                <AiFillLinkedin className="text-[25px]" />
+            </Link>
         </div>
-    </div>
-  )
-}
 
-export default Navbar
+      {/* Side bar */}
+      <div className="sm:hidden flex items-center justify-end w-full">
+        <BiMenu
+          onClick={() => setOpen(true)}
+          className="text-[30px] cursor-pointer"
+        />
+      </div>
+      <div
+        className={`fixed top-0 right-0 bottom-0 overflow-hidden bg-[#161616] transition-all z-50 ${
+          open ? "w-64 sm:w-72" : "w-0"
+        }`}
+        style={{ transitionProperty: "width", transitionDuration: "300ms" }}
+      >
+        <div className="flex flex-col h-full">
+          <div
+            onClick={() => setOpen(false)}
+            className=" flex items-center gap-4 p-3 cursor-pointer "
+          >
+            <IoIosArrowForward className="h-4 rotate-180" />
+            <p>Back</p>
+          </div>
+          <NavLink onClick={() => setOpen(false)} className="py-2 pl-6 ">
+            HOME
+          </NavLink>
+          <NavLink onClick={() => setOpen(false)} className="py-2 pl-6">
+            ABOUT
+          </NavLink>
+          <NavLink onClick={() => setOpen(false)} className="py-2 pl-6 ">
+            PROJECT
+          </NavLink>
+          <NavLink onClick={() => setOpen(false)} className="py-2 pl-6 ">
+            CONTACTS
+          </NavLink>
+          <div className="text-white flex gap-2 justify-start py-2 pl-6 ">
+            <Link to={"https://github.com/Adis-ore"}>
+                <AiFillGithub className="text-[25px]" />
+            </Link>
+            <Link to={""}>
+                <AiFillTwitterCircle className="text-[25px]" />
+            </Link>
+            <Link to={""}>
+                <AiFillLinkedin className="text-[25px]" />
+            </Link>
+        </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
