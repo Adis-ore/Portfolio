@@ -18,7 +18,7 @@ const Hero = () => {
             <TypeWritter
               text="Fullstack Developer"
               speed={100}
-              clearMessageSpeed={30}
+              clearMessageSpeed={200}
               loop={true}
             />
           </span>
