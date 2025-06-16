@@ -10,7 +10,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-[#0A0A0A]  text-white p-3 flex justify-around w-[100%] fixed top-0  ">
+    <div className="bg-[#0A0A0A]  text-white p-3 flex justify-around w-[100%] z-100 fixed top-0  ">
         <div className="text-white">
             <p>ADIS</p>
         </div>
@@ -18,9 +18,7 @@ const Navbar = () => {
         <NavLink className="flex flex-col items-center gap-">
           <a href="#home">Home</a>
         </NavLink>
-        <NavLink className="flex flex-col items-center gap-">
-          <a href="">ABOUT</a>
-        </NavLink>
+          <a href="#skills">Skills</a>
         <NavLink className="flex flex-col items-center gap-">
           <a href="">PROJECTS</a>
         </NavLink>
@@ -64,9 +62,7 @@ const Navbar = () => {
           <NavLink onClick={() => setOpen(false)} className="py-2 pl-6 ">
             HOME
           </NavLink>
-          <NavLink onClick={() => setOpen(false)} className="py-2 pl-6">
-            ABOUT
-          </NavLink>
+          <a  onClick={() => setOpen(false)} className="py-2 pl-6 " href="#skills">Skills</a>
           <NavLink onClick={() => setOpen(false)} className="py-2 pl-6 ">
             PROJECT
           </NavLink>

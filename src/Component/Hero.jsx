@@ -4,9 +4,9 @@ import Profile from "../assets/Profile.png";
 
 const Hero = () => {
   return (
-    <div className="bg-black text-white px-3 flex flex-col-reverse justify-center items-center sm:flex-row sm:justify-around sm:items-center mx-10 h-screen gap-9">
+    <div className="bg-black text-white  flex flex-col-reverse justify-center items-center sm:flex-row sm:justify-around sm:items-center px-10 h-screen gap-9">
       <div className="w-full sm:w-1/2">
-        <h1 className="text-amber-400 text-[30px] leading-[35px] sm:leading-[70px] sm:text-[60px] font-extrabold">
+        <h1 className="text-amber-400 text-[35px]  leading-[50px] sm:leading-[70px] sm:text-[60px] font-extrabold">
           Hi, I am <br /> Adigun Oreoluwa
         </h1>
 
@@ -24,7 +24,7 @@ const Hero = () => {
           </span>
         </div>
 
-        <div className="mt-4 text-sm sm:text-base text-gray-400 leading-relaxed">
+        <div className="mt-4 text-sm sm:text-base font-mono text-gray-400 leading-loose">
           <p>
             I’m a <span className="text-cyan-400">MERN stack developer</span>{" "}
             skilled in React, Node.js, Express, MongoDB, and modern tools like
@@ -37,9 +37,13 @@ const Hero = () => {
             covering everything from authentication to real time collaboration.
           </p>
         </div>
-        <button className="mt-6 px-6 py-3 bg-amber-400 hover:bg-amber-500 text-black font-semibold rounded-lg shadow-md transition-all duration-300">
+        <a
+          href="/Kehinde.pdf"
+          download
+          className="mt-6 inline-block px-6 py-3 bg-amber-400 hover:bg-amber-500 text-black font-semibold rounded-lg shadow-md transition-all duration-300"
+        >
           Download Resume
-        </button>
+        </a>
       </div>
 
       <div className="rounded-full bg-amber-400 size-[250px] sm:size-[400px] flex items-center justify-center overflow-hidden shadow-lg shadow-amber-500/20">
