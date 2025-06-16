@@ -70,7 +70,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="bg-[#3B3C36] min-h-screen flex flex-col justify-start items-center pt-32 pb-16 px-6 sm:px-20"
+      className="bg-[#3B3C36] min-h-screen flex flex-col justify-start items-center pt-32 pb-16 px-6 sm:px-20 overflow-hidden"
     >
       <div className="text-center text-amber-500 space-y-4 max-w-3xl" data-aos="fade-up">
         <h1 className="text-[40px] sm:text-[50px] font-extrabold tracking-wide">Skills</h1>

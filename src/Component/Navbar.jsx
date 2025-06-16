@@ -17,10 +17,8 @@ const Navbar = () => {
       <ul className="hidden sm:flex gap-5 text-sm ">
           <a href="#about">ABOUT</a>
 
-        <a href="#skills">Skills</a>
-        <NavLink className="flex flex-col items-center gap-">
-          <a href="">PROJECTS</a>
-        </NavLink>
+        <a href="#skills">SKILLS</a>
+          <a href="#projects">PROJECTS</a>
         <NavLink className="flex flex-col items-center gap-">
           <a href="">CONTACTS</a>
         </NavLink>
