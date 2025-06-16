@@ -1,6 +1,6 @@
-import { AiFillLinkedin } from "react-icons/ai"; 
-import { AiFillTwitterCircle } from "react-icons/ai"; 
-import { AiFillGithub } from "react-icons/ai"; 
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { BiMenu } from "react-icons/bi";
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
@@ -11,14 +11,13 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#0A0A0A]  text-white p-3 flex justify-around w-[100%] z-100 fixed top-0  ">
-        <div className="text-white">
-            <p>ADIS</p>
-        </div>
+      <div className="text-white">
+        <p>ADIS</p>
+      </div>
       <ul className="hidden sm:flex gap-5 text-sm ">
-        <NavLink className="flex flex-col items-center gap-">
-          <a href="#home">Home</a>
-        </NavLink>
-          <a href="#skills">Skills</a>
+          <a href="#about">ABOUT</a>
+
+        <a href="#skills">Skills</a>
         <NavLink className="flex flex-col items-center gap-">
           <a href="">PROJECTS</a>
         </NavLink>
@@ -26,17 +25,17 @@ const Navbar = () => {
           <a href="">CONTACTS</a>
         </NavLink>
       </ul>
-        <div className="text-white hidden sm:flex gap-2 justify-around ">
-            <Link to={"https://github.com/Adis-ore"}>
-                <AiFillGithub className="text-[25px]" />
-            </Link>
-            <Link to={""}>
-                <AiFillTwitterCircle className="text-[25px]" />
-            </Link>
-            <Link to={""}>
-                <AiFillLinkedin className="text-[25px]" />
-            </Link>
-        </div>
+      <div className="text-white hidden sm:flex gap-2 justify-around ">
+        <Link to={"https://github.com/Adis-ore"}>
+          <AiFillGithub className="text-[25px]" />
+        </Link>
+        <Link to={""}>
+          <AiFillTwitterCircle className="text-[25px]" />
+        </Link>
+        <Link to={""}>
+          <AiFillLinkedin className="text-[25px]" />
+        </Link>
+      </div>
 
       {/* Side bar */}
       <div className="sm:hidden flex items-center justify-end w-full">
@@ -59,27 +58,42 @@ const Navbar = () => {
             <IoIosArrowForward className="h-4 rotate-180" />
             <p>Back</p>
           </div>
-          <NavLink onClick={() => setOpen(false)} className="py-2 pl-6 ">
-            HOME
-          </NavLink>
-          <a  onClick={() => setOpen(false)} className="py-2 pl-6 " href="#skills">Skills</a>
-          <NavLink onClick={() => setOpen(false)} className="py-2 pl-6 ">
-            PROJECT
-          </NavLink>
-          <NavLink onClick={() => setOpen(false)} className="py-2 pl-6 ">
+          <a onClick={() => setOpen(false)} className="py-2 pl-6 " href="#about">
+            ABOUT
+          </a>
+          <a
+            onClick={() => setOpen(false)}
+            className="py-2 pl-6 "
+            href="#skills"
+          >
+            SKILLS
+          </a>
+          <a
+            onClick={() => setOpen(false)}
+            className="py-2 pl-6 "
+            href="#projects"
+          >
+            PROJECTS
+          </a>
+          <a
+            onClick={() => setOpen(false)}
+            className="py-2 pl-6 "
+            href="#contacts"
+          >
             CONTACTS
-          </NavLink>
+          </a>
+
           <div className="text-white flex gap-2 justify-start py-2 pl-6 ">
             <Link to={"https://github.com/Adis-ore"}>
-                <AiFillGithub className="text-[25px]" />
+              <AiFillGithub className="text-[25px]" />
             </Link>
             <Link to={""}>
-                <AiFillTwitterCircle className="text-[25px]" />
+              <AiFillTwitterCircle className="text-[25px]" />
             </Link>
             <Link to={""}>
-                <AiFillLinkedin className="text-[25px]" />
+              <AiFillLinkedin className="text-[25px]" />
             </Link>
-        </div>
+          </div>
         </div>
       </div>
     </div>

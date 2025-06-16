@@ -5,7 +5,7 @@ import Skills from './Skills'
 
 const Home = () => {
   return (
-    <div className='bg-[#161616]' >
+    <div className='bg-[#161616]' id='' >
         <Hero/>
         <Skills/>
         <Project/>
