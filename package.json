@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.10",
     "aos": "^2.3.4",
     "carousel": "^0.0.3",
+    "email-js": "^2.0.3",
     "framer-motion": "^12.18.1",
     "gl-matrix": "^3.4.3",
     "lottie-react": "^2.4.1",

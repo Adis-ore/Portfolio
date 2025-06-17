@@ -163,10 +163,9 @@ const Project = () => {
   return (
     <div
       id="projects"
-      className="h-screen  bg-[#161616] flex flex-col justify-start gap-5 p-2 items-center overflow-hidden ">
-      <div
-        className="text-center text-amber-500  max-w-3xl"
-        data-aos="fade-up" >
+      className="h-screen  bg-[#161616] flex flex-col justify-start gap-5 p-2 items-center overflow-hidden "
+    >
+      <div className="text-center text-amber-500  max-w-3xl" data-aos="fade-up">
         <h1 className="text-[40px] sm:text-[30px] font-extrabold tracking-wide">
           Projects
         </h1>

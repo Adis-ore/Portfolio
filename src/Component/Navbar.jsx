@@ -19,9 +19,8 @@ const Navbar = () => {
 
         <a href="#skills">SKILLS</a>
           <a href="#projects">PROJECTS</a>
-        <NavLink className="flex flex-col items-center gap-">
-          <a href="">CONTACTS</a>
-        </NavLink>
+          <a href="#contact">CONTACTS</a>
+       
       </ul>
       <div className="text-white hidden sm:flex gap-2 justify-around ">
         <Link to={"https://github.com/Adis-ore"}>
