@@ -1,10 +1,12 @@
 import React from "react";
 import { TypeWritter } from "typewritter";
 import Profile from "../assets/Profile.png";
+import SplashCursor from "./SplashCursor";
 
 const Hero = () => {
   return (
-    <div id="about" className="bg-black text-white  flex flex-col-reverse justify-center items-center sm:flex-row sm:justify-around sm:items-center px-10 h-screen gap-9">
+    <div id="about" className="bg-black text-white  flex flex-col-reverse justify-center items-center overflow-hidden sm:flex-row sm:justify-around sm:items-center px-10 h-screen gap-9">
+        <SplashCursor />
       <div className="w-full sm:w-1/2">
         <h1 className="text-amber-400 text-[35px]  leading-[50px] sm:leading-[70px] sm:text-[60px] font-extrabold">
           Hi, I am <br /> Adigun Oreoluwa
