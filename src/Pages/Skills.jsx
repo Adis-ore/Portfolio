@@ -83,7 +83,7 @@ const Skills = () => {
       <div className="mt-12 text-white text-xl font-semibold grid grid-cols-1 sm:grid-cols-2 w-full gap-8">
         
         {/* Frontend */}
-        <div className="w-full text-center" data-aos="fade-right">
+        <div className="w-full text-center" data-aos="fade-right ">
           <h2 className="text-2xl font-bold text-amber-400 mb-4">Frontend</h2>
           <div className="grid grid-cols-3 md:grid-cols-4 gap-4 w-full">
             {frontendSkills.map((item, i) => (

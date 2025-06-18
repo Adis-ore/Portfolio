@@ -2,16 +2,54 @@ import React from "react";
 import { TypeWritter } from "typewritter";
 import Profile from "../assets/Profile.png";
 import SplashCursor from "./SplashCursor";
+import { useEffect } from "react";
+// import gsap from "gsap";
+
 
 const Hero = () => {
+//   useEffect(() => {
+//     document.querySelector(".naag").onmousemove = (e) => {
+//       const clippath = document.querySelector(".naag .in");
+//       const rect = clippath.getBoundingClientRect();
+
+//       gsap.to(clippath, 0.3, {
+//         visibility: "visible",
+//         clipPath: `circle(15% at ${e.x - rect.left}px ${e.y - rect.top}px)`,
+//       });
+//     };
+//     document.querySelector(".naag").onmouseleave = (e) => {
+//       const clippath = document.querySelector(".naag .in");
+//       const rect = clippath.getBoundingClientRect();
+
+//       gsap.to(clippath, 0.3, {
+//         clipPath: `circle(0% at ${e.x - rect.left}px ${e.y - rect.top}px)`,
+//       });
+//       setTimeout(() => {
+//         clippath.style.visibility = "hidden";
+//       }, 1000);
+//     };
+//   });
+
   return (
-    <div id="about" className="bg-black text-white  flex flex-col-reverse justify-center items-center overflow-hidden sm:flex-row sm:justify-around sm:items-center px-10 h-screen gap-9">
-        <SplashCursor />
+    <div
+      id="about"
+      className="bg-black text-white  flex flex-col-reverse justify-center items-center overflow-hidden sm:flex-row sm:justify-around sm:items-center px-10 h-screen gap-9"
+    >
+      <SplashCursor />
       <div className="w-full sm:w-1/2">
         <h1 className="text-amber-400 text-[35px]  leading-[50px] sm:leading-[70px] sm:text-[60px] font-extrabold">
           Hi, I am <br /> Adigun Oreoluwa
         </h1>
-
+    {/* <div className="naag flex flex-col justify-center items-center h-[300px] relative text-[100px] font-[900] -gap-10 max-lg:hidden">
+        <div className="absolute top-1/2 w-full in flex justify-center left-1/2 items-center h-[300px]">
+          <span className="w-[800px] leading-[100px] text-center">
+            Just a Fun Web Developer
+          </span>
+        </div>
+        <h1 className="text-amber-400 text-[35px]  leading-[50px] sm:leading-[70px] sm:text-[60px] font-extrabold">
+          Hi, I am <br /> Adigun Oreoluwa
+        </h1>
+      </div> */}
         <div className="flex items-center gap-3 justify-start flex-row font-bold mt-3">
           <span className="text-[25px] sm:text-[28px] text-gray-300">
             I am a
@@ -40,7 +78,7 @@ const Hero = () => {
           </p>
         </div>
         <a
-          href="/Kehinde.pdf"
+          href="/Adigun.docx"
           download
           className="mt-6 inline-block px-6 py-3 bg-amber-400 hover:bg-amber-500 text-black font-semibold rounded-lg shadow-md transition-all duration-300"
         >

@@ -3,6 +3,7 @@ import "../Component/Carousel.css";
 import Speedtouch from "../assets/Speedtouch.png";
 import Ymca from "../assets/YMCA.png";
 import { Link } from "react-router-dom";
+import Stockup from '../assets/Stockup.jpg'
 
 const Project = () => {
   const carouselRef = useRef(null);
@@ -88,7 +89,7 @@ const Project = () => {
       name: "STOCKUP",
       description:
         "StockUp is a Nigerian fintech app simulating stock trading with virtual currency and AI suggestions.",
-      image: Speedtouch,
+      image: Stockup,
       link: "https://ymcaibadan-0vh5.onrender.com/",
     },
     {
@@ -109,7 +110,7 @@ const Project = () => {
       name: "STOCKUP",
       description:
         "StockUp is a Nigerian fintech app simulating stock trading with virtual currency and AI suggestions.",
-      image: Speedtouch,
+      image: Stockup,
       link: "https://ymcaibadan-0vh5.onrender.com/",
     },
   ];

@@ -17,6 +17,7 @@
     "email-js": "^2.0.3",
     "framer-motion": "^12.18.1",
     "gl-matrix": "^3.4.3",
+    "gsap": "^3.13.0",
     "lottie-react": "^2.4.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

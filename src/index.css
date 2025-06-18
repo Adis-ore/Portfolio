@@ -7,3 +7,9 @@ a.active hr{
 html{
     scroll-behavior: smooth;
 }
+
+
+/* .in {
+  visibility: hidden;
+  transition: clip-path 0.3s ease;
+} */

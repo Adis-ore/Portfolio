@@ -5,31 +5,32 @@ import { BiMenu } from "react-icons/bi";
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
+import Logo from '../assets/logo.png'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-[#0A0A0A]  text-white p-3 flex justify-around w-[100%] z-100 fixed top-0  ">
-      <div className="text-white">
-        <p>ADIS</p>
+    <div className="bg-[#0A0A0A]  text-white p-3 flex justify-around items-center w-[100%] z-100 fixed top-0  ">
+      <div className="text-white font-bold text-[25px] sm:text-[30px] tracking-widest">
+        <img className='size-[25px]' src={Logo} alt="" />
       </div>
       <ul className="hidden sm:flex gap-5 text-sm ">
           <a href="#about">ABOUT</a>
 
         <a href="#skills">SKILLS</a>
           <a href="#projects">PROJECTS</a>
-          <a href="#contact">CONTACTS</a>
+          <a href="#contact">CONTACT</a>
        
       </ul>
       <div className="text-white hidden sm:flex gap-2 justify-around ">
         <Link to={"https://github.com/Adis-ore"}>
           <AiFillGithub className="text-[25px]" />
         </Link>
-        <Link to={""}>
+        <Link to={"https://x.com/adis_akins?t=b4hYuYoIO8GnZ6G2DE2n_Q&s=09"}>
           <AiFillTwitterCircle className="text-[25px]" />
         </Link>
-        <Link to={""}>
+        <Link to={"https://www.linkedin.com/in/adigun-oreoluwa-78b500237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}>
           <AiFillLinkedin className="text-[25px]" />
         </Link>
       </div>
@@ -77,17 +78,17 @@ const Navbar = () => {
             className="py-2 pl-6 "
             href="#contact"
           >
-            CONTACTS
+            CONTACT
           </a>
 
           <div className="text-white flex gap-2 justify-start py-2 pl-6 ">
             <Link to={"https://github.com/Adis-ore"}>
               <AiFillGithub className="text-[25px]" />
             </Link>
-            <Link to={""}>
+            <Link to={"https://x.com/adis_akins?t=b4hYuYoIO8GnZ6G2DE2n_Q&s=09"}>
               <AiFillTwitterCircle className="text-[25px]" />
             </Link>
-            <Link to={""}>
+            <Link to={"https://www.linkedin.com/in/adigun-oreoluwa-78b500237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}>
               <AiFillLinkedin className="text-[25px]" />
             </Link>
           </div>
