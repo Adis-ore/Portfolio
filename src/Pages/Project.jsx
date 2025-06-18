@@ -140,7 +140,7 @@ const Project = () => {
             transform: `translate(-50%, -50%) rotateY(${rotateY}deg) translateZ(300px)`,
           }}
         >
-          <div className="card-content  flex flex-col justify-between h-full p-2 ">
+          <div className="card-content  flex flex-col justify-between h-full p-2  ">
             <img
               src={item.image}
               alt={item.name}

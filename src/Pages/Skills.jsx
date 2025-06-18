@@ -85,7 +85,7 @@ const Skills = () => {
         {/* Frontend */}
         <div className="w-full text-center" data-aos="fade-right ">
           <h2 className="text-2xl font-bold text-amber-400 mb-4">Frontend</h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-4 w-full">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
             {frontendSkills.map((item, i) => (
               <span
                 key={i}
@@ -101,7 +101,7 @@ const Skills = () => {
         {/* Backend */}
         <div className="w-full text-center" data-aos="fade-left">
           <h2 className="text-2xl font-bold text-amber-400 mb-4">Backend</h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-4 w-full">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
             {backendSkills.map((item, i) => (
               <span
                 key={i}
@@ -117,7 +117,7 @@ const Skills = () => {
         {/* Languages */}
         <div className="w-full text-center" data-aos="fade-right">
           <h2 className="text-2xl font-bold text-amber-400 mb-4">Languages</h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-4 w-full">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
             {languages.map((item, i) => (
               <span
                 key={i}
@@ -133,7 +133,7 @@ const Skills = () => {
         {/* Tools */}
         <div className="w-full text-center" data-aos="fade-left">
           <h2 className="text-2xl font-bold text-amber-400 mb-4">Tools</h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-4 w-full">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
             {tools.map((item, i) => (
               <span
                 key={i}

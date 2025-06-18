@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="h-screen flex justify-center items-center flex-col gap-10 p-4 ">
+    <div id="contact" className="h-screen flex justify-start items-center flex-col gap-10 p-4 ">
       <div className="text-center text-amber-500 space-y-4 max-w-3xl" data-aos="fade-up">
         <h1 className="text-[40px] sm:text-[50px] font-extrabold tracking-wide">Contact</h1>
         <hr className="border-amber-500 border-t-4 w-24 mx-auto rounded-full" />
