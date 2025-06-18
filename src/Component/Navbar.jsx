@@ -75,7 +75,7 @@ const Navbar = () => {
           <a
             onClick={() => setOpen(false)}
             className="py-2 pl-6 "
-            href="#contacts"
+            href="#contact"
           >
             CONTACTS
           </a>
