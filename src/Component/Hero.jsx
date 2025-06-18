@@ -33,7 +33,7 @@ const Hero = () => {
   return (
     <div
       id="about"
-      className="bg-black text-white  flex flex-col-reverse justify-center items-center overflow-hidden sm:flex-row sm:justify-around sm:items-center px-10 h-screen gap-9"
+      className="bg-black text-white  flex flex-col-reverse justify-center py-20 items-center overflow-hidden sm:flex-row sm:justify-around sm:items-center px-10 min-lg:h-screen gap-9"
     >
       <SplashCursor />
       <div className="w-full sm:w-1/2">
@@ -86,7 +86,7 @@ const Hero = () => {
         </a>
       </div>
 
-      <div className="rounded-full bg-amber-400 size-[250px] sm:size-[400px] flex items-center justify-center overflow-hidden shadow-lg shadow-amber-500/20">
+      <div className="rounded-full bg-amber-400 size-[250px] sm:size-[400px]  flex items-center justify-center overflow-hidden shadow-lg shadow-amber-500/20">
         <img
           src={Profile}
           alt="Profile"

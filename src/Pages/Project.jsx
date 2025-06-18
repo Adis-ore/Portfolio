@@ -164,7 +164,7 @@ const Project = () => {
   return (
     <div
       id="projects"
-      className="h-screen  bg-[#161616] flex flex-col justify-start gap-5 p-2 items-center overflow-hidden "
+      className="min-lg-h-screen  bg-[#161616] flex flex-col justify-start gap-5 p-2 items-center overflow-hidden "
     >
       <div className="text-center text-amber-500  max-w-3xl" data-aos="fade-up">
         <h1 className="text-[40px] sm:text-[30px] font-extrabold tracking-wide">
@@ -176,7 +176,7 @@ const Project = () => {
           design, and real world problem solving experience
         </h2>
       </div>
-      <div className="bg-[#161616]  text-amber-800 items-center pt-32 pb-16 px-6 sm:px-20 ">
+      <div className="bg-[#161616] h-[600px]  text-amber-800 items-center pt-32 pb-16 px-6 sm:px-20 ">
         <div className="card-3d" ref={carouselRef}>
           {renderCards()}
         </div>
