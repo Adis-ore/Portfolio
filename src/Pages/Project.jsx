@@ -76,42 +76,42 @@ const Project = () => {
       description:
         "SpeedTouch is an e-commerce platform selling cleaning and hygiene products with search and checkout.",
       image: Speedtouch,
-      link: "https://speedtouch.onrender.com/",
+      link: "https://speedtouch.vercel.app/",
     },
     {
       name: "YMCA Ibadan",
       description:
         "YMCA Ibadan promotes youth development, community service, and engagement through programs and events.",
       image: Ymca,
-      link: "https://ymcaibadan-0vh5.onrender.com/",
+      link: "https://ymcaibadan.vercel.app/",
     },
     {
       name: "STOCKUP",
       description:
         "StockUp is a Nigerian fintech app simulating stock trading with virtual currency and AI suggestions.",
       image: Stockup,
-      link: "https://ymcaibadan-0vh5.onrender.com/",
+      link: "https://github.com/smartflow-7/StockUp",
     },
     {
       name: "SPEEDTOUCH",
       description:
         "SpeedTouch is an e-commerce platform selling cleaning and hygiene products with search and checkout.",
       image: Speedtouch,
-      link: "https://speedtouch.onrender.com/",
+      link: "https://speedtouch.vercel.app/",
     },
     {
       name: "YMCA Ibadan",
       description:
         "YMCA Ibadan promotes youth development, community service, and engagement through programs and events.",
       image: Ymca,
-      link: "https://ymcaibadan-0vh5.onrender.com/",
+      link: "https://ymcaibadan.vercel.app/",
     },
     {
       name: "STOCKUP",
       description:
         "StockUp is a Nigerian fintech app simulating stock trading with virtual currency and AI suggestions.",
       image: Stockup,
-      link: "https://ymcaibadan-0vh5.onrender.com/",
+      link: "https://github.com/smartflow-7/StockUp",
     },
   ];
 
